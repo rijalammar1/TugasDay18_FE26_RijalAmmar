@@ -1,0 +1,11 @@
+Pertanyaan Refleksi
+1.Setelah menerapkan CSS pada hasil slicing Figma, bagian mana dari proses styling yang paling menantang bagi kamu, dan bagaimana kamu memastikan tampilannya tetap konsisten dengan desain awal?
+2.Dalam proses membuat tampilan blog ini, bagaimana kamu menyeimbangkan antara estetika desain dan efisiensi kode CSS agar mudah dipelihara dan dikembangkan?
+3.Jika tampilan website ini nantinya perlu dioptimalkan untuk berbagai ukuran layar, langkah apa yang akan kamu lakukan untuk memastikan layout dan elemen tetap proporsional serta nyaman dilihat?
+
+Jawaban:
+1. Pada saat proses slicing figma bagian home blog karena banyak grid yang harus dibuat dan cara saya memastikan tetap konsisten saya memisahkan menjadi 4 grid agar pada saat proses pembuatan CSS 
+    tidak tabrakan satu sama lain
+2. Penamaan dari semua class yang telah saya buat karena sudah saya buat deskriptif dan konsisten ini mempermudah
+   dalam pemeliharaan HTML, kemudian saya juga sudah memisahkan CSS per komponen agar mudah di cari ketika perlu ada yang di edit
+3. Mungkin kedepannya menggati ukuran fixed ke relatif kemudian menggunakan clamp() agar ukuran font otomatis menyesuaikan ukuran layar

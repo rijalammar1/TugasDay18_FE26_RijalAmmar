@@ -1,0 +1,884 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f3f4f6;
+}
+
+.navbar {
+  background-color: #00252E;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 80px;
+}
+
+.nav-kiri a {
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-right: 25px;
+  font-size: 14px;
+}
+
+.nav-kanan img {
+  width: 18px;
+  margin-left: 15px;
+}
+
+.navbar-dua {
+  background-color: #FFFFFF;
+  padding: 25px 80px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 10;
+}
+
+.nav-atas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  height: 35px;
+}
+
+.search img {
+  width: 20px;
+}
+
+.menu {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #555;
+  font-size: 15px;
+}
+
+.menu .search {
+  margin-left: auto;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 70px 80px;
+  align-items: flex-start;
+  background: #FFFFFF;
+}
+
+.hero-kiri {
+  width: 650px;
+}
+
+.hero-kiri img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.hero-isi {
+  margin-top: 25px;
+}
+
+.kategori {
+  font-size: 11px;
+  font-weight: 700;
+  color: #939395;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.hero-isi h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #2E2E2E;
+  margin-bottom: 12px;
+}
+
+.isi-2 {
+  font-size: 13px;
+  color: #939395;
+}
+
+.hero-kanan {
+  width: 520px;
+  padding: 0;
+  position: relative;
+}
+
+.judul-trending {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.judul-trending span {
+  background-color: #019FC4;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 6px 6px 0 0;
+  display: inline-block;
+}
+
+.judul-trending::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #1da1b9;
+}
+
+.trending-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 25px;
+}
+
+.card-trending {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-trending img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.isi-kategori {
+  font-size: 10px;
+  font-weight: 700;
+  color: #939395;
+  margin-bottom: 6px;
+}
+
+.card-trending p {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.45;
+  color: #2E2E2E;
+  margin-bottom: 8px;
+}
+
+.card-trending small {
+  font-size: 11px;
+  color: #939395;
+}
+
+.container {
+  max-width: 1180px;
+  margin: auto;
+}
+
+.hero-2 {
+  padding: 60px 80px;
+  background: #FFFFFF;
+}
+
+.hero-2-wrapper {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.terbaru-kiri {
+  flex: 2.2;
+}
+
+.judul-terbaru {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.judul-terbaru span {
+  background-color: #019FC4;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 6px 6px 0 0;
+  display: inline-block;
+}
+
+.judul-terbaru::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #1da1b9;
+}
+
+.terbaru-isi {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 40px;
+  align-items: flex-start;
+}
+
+.terbaru-isi img {
+  width: 190px;
+  height: 135px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.terbaru-isi small {
+  font-size: 11px;
+  font-weight: 700;
+  color: #939395;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.terbaru-isi h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #1f1f1f;
+}
+
+.terbaru-isi p {
+  font-size: 13px;
+  color: #939395;
+  line-height: 1.6;
+}
+
+.sidebar-rekomendasi {
+  flex: 0 0 238px;
+  background: #0b4f57;
+  padding: 20px 24px;
+  border-radius: 14px;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.sidebar-rekomendasi h4 {
+  font-size: 13px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #FFFFFF;
+}
+
+.item-rekomendasi {
+  margin-bottom: 0;
+}
+
+.item-rekomendasi img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 7px;
+  display: block;
+}
+
+.item-rekomendasi p {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.dot-nav {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.dot-aktif {
+  width: 22px;
+  height: 4px;
+  border-radius: 2px;
+  background: #019FC4;
+  display: block;
+}
+
+.dot-non-aktif {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #d0d0d0;
+  display: block;
+}
+
+.trending-button {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.trending-button button {
+  width: 26px;
+  height: 22px;
+  border: 1px solid #019FC4;
+  background: #FFFFFF;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #019FC4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.footer {
+  background-color: #FFFFFF;
+  padding: 60px 80px 0 80px;
+  overflow: hidden;
+}
+
+.footer-wrapper {
+  display: flex;
+  gap: 200px;
+  padding-bottom: 40px;
+  justify-content: center;
+}
+
+.footer-kiri {
+  max-width: 350px;
+}
+
+.footer-logo img {
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 13px;
+  color: #272727;
+  margin-bottom: 30px;
+}
+
+.tagline-alamat {
+  font-size: 13px;
+  color: #272727;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.sosmed {
+  display: flex;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.sosmed a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #DBF8FF;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sosmed img {
+  width: 16px;
+}
+
+.footer-menu {
+  display: flex;
+  gap: 80px;
+}
+
+.kolom {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.kolom h5 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1f1f1f;
+  margin-bottom: 5px;
+}
+
+.kolom a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #019FC4;
+}
+
+.bottom {
+  border-top: 1px solid #e5e7eb;
+  padding: 30px 0;
+  text-align: center;
+  background-color: #FFFFFF;
+}
+
+.bottom p {
+  font-size: 13px;
+  color: #272727;
+}
+
+.artikel {
+  background-image: url('icon/gambar1.jpg');
+  background-size: cover;
+  background-position: 50% 45%;
+  padding: 80px;
+  position: relative;
+  min-height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.artikel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.artikel-isi {
+  position: relative;
+  z-index: 1;
+  max-width: 55%;
+  color: #FFFFFF;
+}
+
+.artikel-kategori {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #FFFFFF;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.artikel-isi h1 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.artikel-deskripsi {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #ddd;
+  margin-bottom: 25px;
+}
+
+.artikel-gambar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+
+.artikel-gambar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.artikel-sosmed {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 13px;
+  color: #FFFFFF;
+  padding-top: 15px;
+}
+
+.artikel-sosmed a {
+  text-decoration: none;
+}
+
+.artikel-sosmed img {
+  width: 16px;
+}
+
+.artikel-blog-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 40px 80px;
+  background: #FFFFFF;
+}
+
+.artikel-container {
+  width: 55%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.isi-artikel {
+  background: #F2F2F2;
+  border-radius: 8px;
+  padding: 25px 30px;
+  width: 625px;
+  min-width: 625px;
+}
+
+.isi-artikel h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2E2E2E;
+  margin-bottom: 15px;
+}
+
+.isi-artikel ol {
+  list-style: decimal;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.isi-artikel ol li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #019FC4;
+}
+
+.isi-artikel ol li a {
+  color: #019FC4;
+  text-decoration: none;
+}
+
+.artikel-kanan {
+  width: 300px;
+  min-width: 300px;
+  margin-left: 0;
+}
+
+.artikel-kanan h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2E2E2E;
+  margin-bottom: 15px;
+}
+
+.artikel-kanan ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.artikel-kanan ul li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.artikel-kanan ul li img {
+  width: 70px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 4px;
+  min-width: 70px;
+}
+
+.artikel-kanan ul li span {
+  font-size: 13px;
+  color: #2E2E2E;
+  line-height: 1.5;
+}
+
+.artikel-kiri {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 625px;
+  min-width: 625px;
+}
+
+.artikel-konten {
+  width: 625px;
+  min-width: 625px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.artikel-gambar-img {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.artikel-konten p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #2E2E2E;
+  margin: 0;
+}
+
+.artikel-paragraf {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.artikel-paragraf p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #2E2E2E;
+  margin: 0;
+  text-indent: 40px;
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 10px 30px;
+  }
+
+  .navbar-dua {
+    padding: 20px 30px;
+  }
+
+
+  .menu {
+    gap: 20px;
+  }
+
+
+  .hero {
+    flex-direction: column;
+
+    padding: 40px 30px;
+    gap: 40px;
+  }
+
+
+  .hero-kiri {
+    width: 100%;
+
+  }
+
+
+  .hero-kiri img {
+    height: 350px;
+  }
+
+
+  .hero-kanan {
+    width: 100%;
+  }
+
+
+  .hero-2 {
+    padding: 40px 30px;
+  }
+
+
+  .hero-2-wrapper {
+    flex-direction: column;
+  }
+
+
+  .sidebar-rekomendasi {
+    flex: none;
+    width: 100%;
+  }
+
+
+  .footer {
+    padding: 40px 30px 0 30px;
+  }
+
+
+  .footer-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+
+  .footer-menu {
+    gap: 40px;
+  }
+
+
+  .artikel-blog-wrapper {
+    padding: 30px;
+  }
+
+
+  .artikel-container {
+    width: 100%;
+    flex-direction: column;
+  }
+
+
+  .isi-artikel,
+  .artikel-kiri,
+  .artikel-konten {
+    width: 100%;
+    min-width: unset;
+
+  }
+
+
+  .artikel-kanan {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+@media (max-width: 768px) {
+
+
+  .nav-kiri {
+    display: none;
+
+  }
+
+
+  .navbar-dua {
+    padding: 15px 20px;
+  }
+
+
+  .menu {
+    display: none;
+  }
+
+
+  .hero {
+    padding: 30px 20px;
+  }
+
+
+  .hero-kiri img {
+    height: 250px;
+  }
+
+
+  .hero-isi h2 {
+    font-size: 20px;
+  }
+
+
+  .trending-grid {
+    grid-template-columns: 1fr;
+
+  }
+
+
+  .terbaru-isi {
+    flex-direction: column;
+  }
+
+
+  .terbaru-isi img {
+    width: 100%;
+    height: 200px;
+  }
+
+
+  .hero-2 {
+    padding: 30px 20px;
+  }
+
+
+  .footer {
+    padding: 30px 20px 0 20px;
+  }
+
+
+  .footer-menu {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+
+  .artikel {
+    padding: 40px 20px;
+    min-height: 500px;
+  }
+
+
+  .artikel-isi {
+    max-width: 90%;
+  }
+
+
+  .artikel-isi h1 {
+    font-size: 26px;
+  }
+
+
+  .artikel-deskripsi {
+    font-size: 14px;
+  }
+
+
+  .artikel-blog-wrapper {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .navbar-dua {
+    padding: 12px 15px;
+  }
+
+  .hero {
+    padding: 20px 15px;
+  }
+
+  .hero-kiri img {
+    height: 200px;
+  }
+
+  .artikel-isi h1 {
+    font-size: 20px;
+  }
+
+  .footer {
+    padding: 20px 15px 0 15px;
+  }
+
+  .footer-kiri {
+    max-width: 100%;
+  }
+
+  .artikel-blog-wrapper {
+    padding: 15px;
+  }
+}
